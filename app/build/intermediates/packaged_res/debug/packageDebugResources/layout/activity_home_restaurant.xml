@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F2"
+    android:padding="24dp"
+    tools:context=".screen.features_restaurant_management.HomeRestaurant">
+
+    <!-- Tiêu đề -->
+ <TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quản lý Nhà hàng"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:textColor="@color/orange"
+    android:background="@drawable/bg_title_rounded"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+
+    <!-- Lưới icon chức năng -->
+    <GridLayout
+        android:id="@+id/gridMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="32dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 1. Quản lý món ăn -->
+        <LinearLayout
+            android:id="@+id/btnManageFood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_orange_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icons_managdfood"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quản lý món ăn"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FF8A00"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- 2. Doanh thu -->
+        <LinearLayout
+            android:id="@+id/btnRevenue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_orange_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icons_reportmanage"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doanh thu nhà hàng"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FF8A00"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- 3. Quản lý đơn hàng -->
+        <LinearLayout
+            android:id="@+id/btnManageOrders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_orange_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icons_ordermanage"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quản lý đơn hàng"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FF8A00"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- 4. Thông tin nhà hàng -->
+        <LinearLayout
+            android:id="@+id/btnRestaurantInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_orange_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icons_infores"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin nhà hàng"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FF8A00"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

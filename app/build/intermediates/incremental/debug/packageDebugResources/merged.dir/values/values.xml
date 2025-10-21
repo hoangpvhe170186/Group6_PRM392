@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_options">
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>All Time</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="bottom_nav_color">#FF5722</color>
+    <color name="brown">#9C6644</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="gray">#6C757D</color>
+    <color name="gray_dark">#757575</color>
+    <color name="gray_light">#D3D3D3</color>
+    <color name="green">#008000</color>
+    <color name="green_light">#81C784</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="light_red">#FF6666</color>
+    <color name="orange">#FFA500</color>
+    <color name="primary">#007BFF</color>
+    <color name="red_light">#E57373</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFC107</color>
+    <string name="app_name">F_Food</string>
+    <string name="gcm_defaultSenderId" translatable="false">149744125444</string>
+    <string name="google_api_key" translatable="false">AIzaSyDKuxAOC2e3muNFBmrDiWgJm857rTmMFa0</string>
+    <string name="google_app_id" translatable="false">1:149744125444:android:216b8f64e69fde47069751</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDKuxAOC2e3muNFBmrDiWgJm857rTmMFa0</string>
+    <string name="google_maps_key">AIzaSyAR7MKPVaGnaIGxUDT5HE4CZ50AXiad_o0</string>
+    <string name="google_storage_bucket" translatable="false">androidapp-8a131.firebasestorage.app</string>
+    <string name="project_id" translatable="false">androidapp-8a131</string>
+    <style name="Apptheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="Base.Theme.F_Food" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.F_Food" parent="Base.Theme.F_Food"/>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.F_Food"
+        tools:targetApi="31">
+        <activity
+            android:name=".screen.authentication_authorization.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.authentication_authorization.VerifyCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.admin_management.Update_Policy"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.features_restaurant_management.HomeRestaurant"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.ChangePassword"
+            android:exported="true" />
+        <activity android:name=".screen.features_restaurant_management.OrderDetailActivity" />
+        <activity
+            android:name=".screen.authentication_authorization.ForgotPassActivity"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.order_processing.DeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".screen.features_customer.HomeStart"
+            android:exported="false" />
+        <activity
+            android:name=".screen.features_customer.Address"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.GoogleMaps"
+            android:exported="true" />
+        <activity
+            android:name=".screen.order_processing.OrderAccepted"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".screen.features_restaurant_management.AddFoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.activity_checkout"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.activity_cart"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.OrderHistoryDetail"
+            android:exported="false" />
+        <activity
+            android:name=".screen.authentication_authorization.ShipperSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".screen.authentication_authorization.ShipperLogin"
+            android:exported="true" />
+        <activity
+            android:name=".screen.order_processing.DeliveryStatusUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.UpdateFood"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.ManageFoodDetail"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.CustomerProfile"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.RestaurantNotifications"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.RestaurantSalesReport"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.RestaurantOrders"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.MenuManagement"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_restaurant_management.CustomerSupport"
+            android:exported="true" />
+        <activity
+            android:name=".screen.order_processing.AcceptShippingOrder"
+            android:exported="true" />
+        <activity
+            android:name=".screen.order_processing.DeliveryHistory"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".screen.order_processing.PendingOrder"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.FoodDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.authentication_authorization.RestaurantLogIn"
+            android:exported="true" />
+        <activity
+            android:name=".screen.authentication_authorization.RestaurantSignUp"
+            android:exported="true" />
+        <activity
+            android:name=".screen.authentication_authorization.SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.ManageAddress"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.ReviewAndRating"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.OrderTracking"
+            android:exported="true" />
+        <activity
+            android:name=".screen.features_customer.OrderHistory"
+            android:exported="true" />
+        <activity
+            android:name=".screen.authentication_authorization.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.features_customer.ViewRestaurantList"
+            android:exported="true" />
+        <activity
+            android:name=".screen.admin_management.Restaurant_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.admin_management.Customer_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.admin_management.Payment_Transactions_Management"
+            android:exported="true" />
+        <activity
+            android:name=".screen.admin_management.Policy_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.admin_management.Shipper_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.admin_management.AdminScreen"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".screen.features_customer.ProductListRestaurant"
+            android:exported="true" />
+        <activity
+            android:name=".screen.admin_management.AddPolicy"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

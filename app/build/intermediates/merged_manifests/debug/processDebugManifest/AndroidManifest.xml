@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.f_food"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="27"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <queries>
+
+        <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.F_Food" >
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.VerifyCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Update_Policy"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.HomeRestaurant"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.ChangePassword"
+            android:exported="true" />
+        <activity android:name="com.example.f_food.screen.features_restaurant_management.OrderDetailActivity" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.ForgotPassActivity"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.DeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.HomeStart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.Address"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.GoogleMaps"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.OrderAccepted"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.AddFoodActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.activity_checkout"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.activity_cart"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.OrderHistoryDetail"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.ShipperSignUp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.ShipperLogin"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.DeliveryStatusUpdate"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.UpdateFood"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.ManageFoodDetail"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.CustomerProfile"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantNotifications"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantSalesReport"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantOrders"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.MenuManagement"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_restaurant_management.CustomerSupport"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.AcceptShippingOrder"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.DeliveryHistory"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.f_food.screen.order_processing.PendingOrder"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.FoodDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.RestaurantLogIn"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.RestaurantSignUp"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.SignUp"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.ManageAddress"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.ReviewAndRating"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.OrderTracking"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.OrderHistory"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.authentication_authorization.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.f_food.screen.features_customer.ViewRestaurantList"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Restaurant_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Customer_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Payment_Transactions_Management"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Policy_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.Shipper_Management"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.AdminScreen"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.screen.features_customer.ProductListRestaurant"
+            android:exported="true" />
+        <activity
+            android:name="com.example.f_food.screen.admin_management.AddPolicy"
+            android:exported="true"
+            android:theme="@style/Apptheme" />
+        <activity
+            android:name="com.example.f_food.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.f_food.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.f_food.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.f_food.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

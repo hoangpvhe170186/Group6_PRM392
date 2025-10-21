@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF3E0"
+    android:id="@+id/forgotPasswordActivity">
+
+    <!-- Nhập địa chỉ Email -->
+    <TextView
+        android:id="@+id/EmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/icmail"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:id="@+id/enterEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập địa chỉ email"
+        android:textSize="24sp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/EmailLabel"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="8dp"/>
+
+    <!-- Ô nhập Email -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/enterEmailLabel"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF9800"
+        android:drawableStart="@drawable/input_mail_icon"
+        android:drawablePadding="8dp"/>
+
+    <!-- Nút gửi -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:textSize="18sp"
+        android:layout_below="@+id/groupRegister"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/send_mail"
+        android:drawablePadding="8dp"/>
+
+    <!-- Bạn đã có tài khoản chưa? -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/groupRegister"
+        android:layout_below="@id/emailInput"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <!-- Bạn đã có tài khoản chưa? -->
+        <TextView
+            android:id="@+id/haveAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/signup_ic"
+            android:text="Bạn đã có tài khoản chưa?"
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

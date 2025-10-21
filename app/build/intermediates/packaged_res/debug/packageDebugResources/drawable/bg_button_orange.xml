@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Trạng thái khi nhấn -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FF8A00"/> <!-- Cam đậm khi nhấn -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Trạng thái mặc định -->
+    <item>
+        <shape>
+            <solid android:color="#FFA726"/> <!-- Cam nhạt bình thường -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+</selector>

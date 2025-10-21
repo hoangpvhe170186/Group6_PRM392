@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/update_policy"
+    tools:context=".screen.admin_management.Update_Policy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="8dp">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Policy"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="1dp"/>
+    </LinearLayout>
+
+    <!-- Form Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- Policy Title Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Policy Title"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPolicyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter policy title"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Policy Description Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Policy Description"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPolicyDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter policy description"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnupdate_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Policy"
+            android:textColor="@color/white"
+            android:background="@color/primary"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</LinearLayout>

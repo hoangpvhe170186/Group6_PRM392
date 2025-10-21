@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.features_restaurant_management.CustomerSupport"
+    android:id="@+id/customerSupportActivity">
+
+    <!-- Home Icon -->
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/home_icon"
+        android:contentDescription="Home Icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Search..."
+        android:background="@color/light_gray"
+        app:layout_constraintStart_toEndOf="@id/homeIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Notification Container -->
+    <TextView
+        android:id="@+id/notificationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abcxyz : Gửi 1 yêu cầu khiếu nại với bạn"
+        android:textSize="16sp"
+        android:background="@color/light_red"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Order Details Container -->
+    <LinearLayout
+        android:id="@+id/orderDetailsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_gray"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/notificationText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/orderImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/home_icon"
+            android:contentDescription="Order Image"/>
+
+        <TextView
+            android:id="@+id/orderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng : SP2025"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/orderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thịt kho"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/orderDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng: 2 phần    Phí giao hàng: 10.000 vnd\nSố tiền: 70.000 vnd"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/orderTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng giá trị : 80.000 vnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng : Nguyễn Ngọc Huy"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/customerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: 098 4888 999"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/customerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ : nhà trọ Hiếu Nghĩa - thôn 3 - Thạch Hòa - Thạch Thất - Hà Nội"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/orderDetailsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:background="@drawable/accept_button"
+            android:textColor="@color/white"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Từ chối"
+            android:background="@drawable/reject_button"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

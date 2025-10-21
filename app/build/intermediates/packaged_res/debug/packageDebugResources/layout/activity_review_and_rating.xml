@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/reviewAndRating">
+
+    <ImageView
+        android:id="@+id/imgBackRate"
+        android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:src="@drawable/ic_home"
+    android:contentDescription="Back to Home"
+    android:padding="12dp"
+    android:layout_marginEnd="16dp"
+    android:background="?android:selectableItemBackground" />  <!-- Add ripple effect for feedback -->
+
+    <!-- Tên món ăn -->
+    <TextView
+        android:id="@+id/textViewFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên món ăn"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+    <!-- Ảnh món ăn -->
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Đánh giá sao -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Đánh giá bằng văn bản -->
+    <EditText
+        android:id="@+id/editTextFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Đánh giá món ăn"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Nút Đóng -->
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

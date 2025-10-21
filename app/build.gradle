@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Áp dụng plugin Google Services
+}
+
+android {
+    namespace 'com.example.f_food'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.f_food"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+    // Các dependencies khác
+    implementation 'org.projectlombok:lombok:1.18.30'
+    implementation libs.room.runtime
+    implementation libs.firebase.functions
+    implementation libs.recyclerview
+    implementation libs.generativeai// Thêm Lombok
+    annotationProcessor 'org.projectlombok:lombok:1.18.30' // Annotation processor cho Lombok
+    implementation libs.room.common
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    annotationProcessor libs.room.compiler
+    dependencies {
+        implementation libs.squareup.picasso
+    }
+
+    implementation("androidx.room:room-runtime:2.4.3")
+    annotationProcessor("androidx.room:room-compiler:2.4.3")
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.ai.client.generativeai:generativeai:0.9.0'
+    implementation 'com.google.guava:guava:33.1.0-android'
+    implementation 'com.sun.mail:android-mail:1.6.2'
+    implementation 'com.sun.mail:android-activation:1.6.2'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'org.json:json:20231013'
+    implementation 'org.osmdroid:osmdroid-android:6.1.10'
+}
+

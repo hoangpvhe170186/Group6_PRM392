@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    android:layout_margin="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#F5F5F5"
+        android:elevation="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgUser_Profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/avatarplaceholder"
+            android:scaleType="centerCrop"
+
+            android:padding="6dp"
+            android:elevation="6dp" />
+
+        <!-- User Information -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/txtUser_Management_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: 12345"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/txtUser_Management_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: John Doe"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/txtUser_Management_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: johndoe@email.com"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/txtUser_Management_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: 123-456-7890"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/txtUser_Management_CreateAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created on: 2023-01-01"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+        </LinearLayout>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnUser_Management_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Ban"
+            android:background="@color/red_light"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/gray_dark"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:paddingHorizontal="24dp"
+            android:elevation="8dp"
+           />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

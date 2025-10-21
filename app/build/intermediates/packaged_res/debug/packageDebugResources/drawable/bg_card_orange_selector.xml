@@ -1,0 +1,4 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33FF8A00">
+    <item android:drawable="@drawable/bg_card_orange" />
+</ripple>

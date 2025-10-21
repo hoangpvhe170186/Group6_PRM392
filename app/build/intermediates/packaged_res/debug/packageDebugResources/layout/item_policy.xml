@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/edittext_border">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/Ln_policy"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPolicy_Management_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtPolicy_Management_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtPolicy_Management_Createat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Createat: "
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnManagement_Delete_Policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
