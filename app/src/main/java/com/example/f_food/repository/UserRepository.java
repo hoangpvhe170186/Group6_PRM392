@@ -56,11 +56,11 @@ public class UserRepository {
 
     private void insertSampleData() {
         List<User> sampleUsers = Arrays.asList(
-                new User(1, "Tung Cao Thanh", "tungcthe176530@fpt.edu.vn", "123", "0123456789", "Customer", "2023-01-01 10:00:00", "2023-01-01 10:00:00", false, null),
-                new User(2, "Huy Long Ngun", "alice@example.com", "password456", "0987654321", "Restaurant", "2023-01-02 11:00:00", "2023-01-02 11:00:00", false, null),
-                new User(3, "Bach dep trai", "bob@example.com", "password789", "0112233445", "Shipper", "2023-01-03 12:00:00", "2023-01-03 12:00:00", false, null),
-                new User(4, "Binh hihi", "admin", "1", "0223344556", "Admin", "2023-01-04 13:00:00", "2023-01-04 13:00:00", false, null),
-                new User(5, "Minh PQ", "boby@example.com", "1", "0223344556", "Customer", "2023-01-04 13:00:00", "2023-01-04 13:00:00", false, null)
+                new User(1, "hoang", "haha@gmail.com", "123", "0123456789", "Customer", "2025-10-20 10:00:00", "2025-10-20 10:00:00", false, null),
+                new User(2, "quang", "kaka@gmail.com", "password456", "0987654321", "Restaurant", "2025-10-20 10:00:00", "2025-10-20 10:00:00", false, null),
+                new User(3, "thang", "keke@gmail.com", "password789", "0112233445", "Shipper", "2025-10-20 10:00:00", "2025-10-20 10:00:00", false, null),
+                new User(4, "thinh", "admin", "1", "0223344556", "Admin", "2025-10-20 10:00:00", "2025-10-20 10:00:00", false, null),
+                new User(5, "trung", "meme@gmail.com", "1", "0223344556", "Customer", "2025-10-20 10:00:00", "2025-10-20 10:00:00", false, null)
         );
 
         for (User user : sampleUsers) {
