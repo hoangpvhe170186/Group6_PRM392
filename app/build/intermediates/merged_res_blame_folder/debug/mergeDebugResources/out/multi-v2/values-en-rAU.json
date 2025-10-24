@@ -4,7 +4,7 @@
             "outputFile": "com.example.f_food.app-mergeDebugResources-41:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administator\\.gradle\\caches\\8.9\\transforms\\c67d1d264b9a110488c928131f2924bb\\transformed\\appcompat-1.7.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\c67d1d264b9a110488c928131f2924bb\\transformed\\appcompat-1.7.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administator\\.gradle\\caches\\8.9\\transforms\\e2016a8fdfcefbe41fd96e29f5df3d77\\transformed\\core-1.13.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\e2016a8fdfcefbe41fd96e29f5df3d77\\transformed\\core-1.13.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

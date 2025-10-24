@@ -9,622 +9,622 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:5:22-64
+11-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:6:5-80
-12-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:6:22-77
+12-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:7:5-79
-13-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:7:22-76
+13-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:8:5-81
-14-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:8:22-78
+14-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-15-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:9:5-85
-15-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:9:22-82
+15-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:9:5-85
+15-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:9:22-82
 16
 17    <uses-feature android:name="android.hardware.location.gps" />
-17-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:11:5-66
-17-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:11:19-63
+17-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:11:5-66
+17-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:11:19-63
 18    <uses-feature android:name="android.hardware.location.network" />
-18-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:12:5-70
-18-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:12:19-67
+18-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:12:5-70
+18-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:12:19-67
 19
 20    <!-- Include required permissions for Google Maps API to run. -->
 21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
-21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
 22
 23    <uses-feature
-23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
 24        android:glEsVersion="0x00020000"
-24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
 25        android:required="true" />
-25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
 26
 27    <queries>
-27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
 28
 29        <!-- Needs to be explicitly declared on Android R+ -->
 30        <package android:name="com.google.android.apps.maps" />
-30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
-30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
 31    </queries>
 32
 33    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:5-68
-33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:22-65
+33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:5-68
+33-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:24:22-65
 34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
-34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+34-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
 35
 36    <permission
-36-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+36-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 37        android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-37-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+37-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
 38        android:protectionLevel="signature" />
-38-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+38-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 39
 40    <uses-permission android:name="com.example.f_food.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-40-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-40-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+40-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 41
 42    <supports-screens
-42-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:11:5-14:40
+42-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:11:5-14:40
 43        android:anyDensity="true"
-43-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:12:9-34
+43-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:12:9-34
 44        android:largeScreens="true"
-44-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:13:9-36
+44-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:13:9-36
 45        android:normalScreens="true" />
-45-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:14:9-37
+45-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:14:9-37
 46
 47    <uses-feature
-47-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:22:5-24:36
+47-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:22:5-24:36
 48        android:name="android.hardware.telephony"
-48-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:23:9-50
+48-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:23:9-50
 49        android:required="false" />
-49-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:24:9-33
+49-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:24:9-33
 50    <uses-feature
-50-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:25:5-27:36
+50-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:25:5-27:36
 51        android:name="android.hardware.wifi"
-51-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:26:9-45
+51-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:26:9-45
 52        android:required="false" />
-52-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Administator\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:27:9-33
+52-->[org.osmdroid:osmdroid-android:6.1.10] C:\Users\Admin\.gradle\caches\8.9\transforms\6fbe73fb6442b320bcea36e30ebd9ea9\transformed\osmdroid-android-6.1.10\AndroidManifest.xml:27:9-33
 53
 54    <application
-54-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:14:5-198:19
+54-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:14:5-198:19
 55        android:allowBackup="true"
-55-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:15:9-35
+55-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:15:9-35
 56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-56-->[androidx.core:core:1.13.0] C:\Users\Administator\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+56-->[androidx.core:core:1.13.0] C:\Users\Admin\.gradle\caches\8.9\transforms\e2016a8fdfcefbe41fd96e29f5df3d77\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 57        android:dataExtractionRules="@xml/data_extraction_rules"
-57-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:16:9-65
+57-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:16:9-65
 58        android:debuggable="true"
 59        android:extractNativeLibs="false"
 60        android:fullBackupContent="@xml/backup_rules"
-60-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:17:9-54
+60-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:17:9-54
 61        android:icon="@mipmap/ic_launcher"
-61-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:18:9-43
+61-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:18:9-43
 62        android:label="@string/app_name"
-62-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:19:9-41
+62-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:19:9-41
 63        android:requestLegacyExternalStorage="true"
-63-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:20:9-52
+63-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:20:9-52
 64        android:roundIcon="@mipmap/ic_launcher_round"
-64-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:21:9-54
+64-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:21:9-54
 65        android:supportsRtl="true"
-65-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:22:9-35
+65-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:22:9-35
 66        android:testOnly="true"
 67        android:theme="@style/Theme.F_Food" >
-67-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:23:9-44
+67-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:23:9-44
 68        <activity
-68-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:25:9-27:40
+68-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:25:9-27:40
 69            android:name="com.example.f_food.screen.authentication_authorization.ResetPasswordActivity"
-69-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:26:13-86
+69-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:26:13-86
 70            android:exported="false" />
-70-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:27:13-37
+70-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:27:13-37
 71        <activity
-71-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:28:9-30:40
+71-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:28:9-30:40
 72            android:name="com.example.f_food.screen.authentication_authorization.VerifyCodeActivity"
-72-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:29:13-83
+72-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:29:13-83
 73            android:exported="false" />
-73-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:30:13-37
+73-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:30:13-37
 74        <activity
-74-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:31:9-34:47
+74-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:31:9-34:47
 75            android:name="com.example.f_food.screen.admin_management.Update_Policy"
-75-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:32:13-66
+75-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:32:13-66
 76            android:exported="true"
-76-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:33:13-36
+76-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:33:13-36
 77            android:theme="@style/Apptheme" />
-77-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:34:13-44
+77-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:34:13-44
 78        <activity
-78-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:35:9-37:39
+78-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:35:9-37:39
 79            android:name="com.example.f_food.screen.features_restaurant_management.HomeRestaurant"
-79-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:36:13-81
+79-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:36:13-81
 80            android:exported="true" />
-80-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:37:13-36
+80-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:37:13-36
 81        <activity
-81-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:38:9-40:39
+81-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:38:9-40:39
 82            android:name="com.example.f_food.screen.features_customer.ChangePassword"
-82-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:39:13-68
+82-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:39:13-68
 83            android:exported="true" />
-83-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:40:13-36
+83-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:40:13-36
 84        <activity android:name="com.example.f_food.screen.features_restaurant_management.OrderDetailActivity" />
-84-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:41:9-95
-84-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:41:19-92
+84-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:41:9-95
+84-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:41:19-92
 85        <activity
-85-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:42:9-45:47
+85-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:42:9-45:47
 86            android:name="com.example.f_food.screen.authentication_authorization.ForgotPassActivity"
-86-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:43:13-83
+86-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:43:13-83
 87            android:exported="true"
-87-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:44:13-36
+87-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:44:13-36
 88            android:theme="@style/Apptheme" />
-88-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:45:13-44
+88-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:45:13-44
 89        <activity
-89-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:46:9-48:40
+89-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:46:9-48:40
 90            android:name="com.example.f_food.screen.order_processing.DeliveryDetails"
-90-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:47:13-68
+90-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:47:13-68
 91            android:exported="false" />
-91-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:48:13-37
+91-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:48:13-37
 92        <activity
-92-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:49:9-51:40
+92-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:49:9-51:40
 93            android:name="com.example.f_food.screen.features_customer.HomeStart"
-93-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:50:13-63
+93-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:50:13-63
 94            android:exported="false" />
-94-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:51:13-37
+94-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:51:13-37
 95        <activity
-95-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:52:9-54:39
+95-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:52:9-54:39
 96            android:name="com.example.f_food.screen.features_customer.Address"
-96-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:53:13-61
+96-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:53:13-61
 97            android:exported="true" />
-97-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:54:13-36
+97-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:54:13-36
 98        <activity
-98-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:55:9-57:39
+98-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:55:9-57:39
 99            android:name="com.example.f_food.screen.features_customer.GoogleMaps"
-99-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:56:13-64
+99-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:56:13-64
 100            android:exported="true" />
-100-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:57:13-36
+100-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:57:13-36
 101        <activity
-101-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:58:9-61:57
+101-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:58:9-61:57
 102            android:name="com.example.f_food.screen.order_processing.OrderAccepted"
-102-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:59:13-66
+102-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:59:13-66
 103            android:exported="true"
-103-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:60:13-36
+103-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:60:13-36
 104            android:windowSoftInputMode="stateHidden" />
-104-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:61:13-54
+104-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:61:13-54
 105
 106        <meta-data
-106-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:63:9-65:55
+106-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:63:9-65:55
 107            android:name="com.google.android.geo.API_KEY"
-107-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:64:13-58
+107-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:64:13-58
 108            android:value="@string/google_maps_key" />
-108-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:65:13-52
+108-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:65:13-52
 109
 110        <activity
-110-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:67:9-69:39
+110-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:67:9-69:39
 111            android:name="com.example.f_food.screen.features_restaurant_management.AddFoodActivity"
-111-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:68:13-82
+111-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:68:13-82
 112            android:exported="true" />
-112-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:69:13-36
+112-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:69:13-36
 113        <activity
-113-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:70:9-72:39
+113-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:70:9-72:39
 114            android:name="com.example.f_food.screen.features_customer.activity_checkout"
-114-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:71:13-71
+114-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:71:13-71
 115            android:exported="true" />
-115-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:72:13-36
+115-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:72:13-36
 116        <activity
-116-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:73:9-75:39
+116-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:73:9-75:39
 117            android:name="com.example.f_food.screen.features_customer.activity_cart"
-117-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:74:13-67
+117-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:74:13-67
 118            android:exported="true" />
-118-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:75:13-36
+118-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:75:13-36
 119        <activity
-119-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:76:9-78:40
+119-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:76:9-78:40
 120            android:name="com.example.f_food.screen.features_customer.OrderHistoryDetail"
-120-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:77:13-72
+120-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:77:13-72
 121            android:exported="false" />
-121-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:78:13-37
+121-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:78:13-37
 122        <activity
-122-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:79:9-81:40
+122-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:79:9-81:40
 123            android:name="com.example.f_food.screen.authentication_authorization.ShipperSignUp"
-123-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:80:13-78
+123-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:80:13-78
 124            android:exported="false" />
-124-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:81:13-37
+124-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:81:13-37
 125        <activity
-125-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:82:9-84:39
+125-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:82:9-84:39
 126            android:name="com.example.f_food.screen.authentication_authorization.ShipperLogin"
-126-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:83:13-77
+126-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:83:13-77
 127            android:exported="true" />
-127-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:84:13-36
+127-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:84:13-36
 128        <activity
-128-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:85:9-87:39
+128-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:85:9-87:39
 129            android:name="com.example.f_food.screen.order_processing.DeliveryStatusUpdate"
-129-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:86:13-73
+129-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:86:13-73
 130            android:exported="true" />
-130-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:87:13-36
+130-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:87:13-36
 131        <activity
-131-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:88:9-90:39
+131-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:88:9-90:39
 132            android:name="com.example.f_food.screen.features_restaurant_management.UpdateFood"
-132-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:89:13-77
+132-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:89:13-77
 133            android:exported="true" />
-133-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:90:13-36
+133-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:90:13-36
 134        <activity
-134-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:91:9-93:39
+134-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:91:9-93:39
 135            android:name="com.example.f_food.screen.features_restaurant_management.ManageFoodDetail"
-135-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:92:13-83
+135-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:92:13-83
 136            android:exported="true" />
-136-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:93:13-36
+136-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:93:13-36
 137        <activity
-137-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:94:9-96:39
+137-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:94:9-96:39
 138            android:name="com.example.f_food.screen.features_customer.CustomerProfile"
-138-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:95:13-69
+138-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:95:13-69
 139            android:exported="true" />
-139-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:96:13-36
+139-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:96:13-36
 140        <activity
-140-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:97:9-99:39
+140-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:97:9-99:39
 141            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantNotifications"
-141-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:98:13-90
+141-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:98:13-90
 142            android:exported="true" />
-142-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:99:13-36
+142-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:99:13-36
 143        <activity
-143-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:100:9-102:39
+143-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:100:9-102:39
 144            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantSalesReport"
-144-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:101:13-88
+144-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:101:13-88
 145            android:exported="true" />
-145-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:102:13-36
+145-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:102:13-36
 146        <activity
-146-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:103:9-105:39
+146-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:103:9-105:39
 147            android:name="com.example.f_food.screen.features_restaurant_management.RestaurantOrders"
-147-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:104:13-83
+147-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:104:13-83
 148            android:exported="true" />
-148-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:105:13-36
+148-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:105:13-36
 149        <activity
-149-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:106:9-108:39
+149-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:106:9-108:39
 150            android:name="com.example.f_food.screen.features_restaurant_management.MenuManagement"
-150-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:107:13-81
+150-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:107:13-81
 151            android:exported="true" />
-151-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:108:13-36
+151-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:108:13-36
 152        <activity
-152-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:109:9-111:39
+152-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:109:9-111:39
 153            android:name="com.example.f_food.screen.features_restaurant_management.CustomerSupport"
-153-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:110:13-82
+153-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:110:13-82
 154            android:exported="true" />
-154-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:111:13-36
+154-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:111:13-36
 155        <activity
-155-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:112:9-114:39
+155-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:112:9-114:39
 156            android:name="com.example.f_food.screen.order_processing.AcceptShippingOrder"
-156-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:113:13-72
+156-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:113:13-72
 157            android:exported="true" />
-157-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:114:13-36
+157-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:114:13-36
 158        <activity
-158-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:115:9-118:57
+158-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:115:9-118:57
 159            android:name="com.example.f_food.screen.order_processing.DeliveryHistory"
-159-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:116:13-68
+159-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:116:13-68
 160            android:exported="true"
-160-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:117:13-36
+160-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:117:13-36
 161            android:windowSoftInputMode="stateHidden" />
-161-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:118:13-54
+161-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:118:13-54
 162        <activity
-162-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:119:9-121:39
+162-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:119:9-121:39
 163            android:name="com.example.f_food.screen.order_processing.PendingOrder"
-163-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:120:13-65
+163-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:120:13-65
 164            android:exported="true" />
-164-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:121:13-36
+164-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:121:13-36
 165        <activity
-165-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:122:9-124:39
+165-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:122:9-124:39
 166            android:name="com.example.f_food.screen.features_customer.FoodDetailActivity"
-166-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:123:13-72
+166-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:123:13-72
 167            android:exported="true" />
-167-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:124:13-36
+167-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:124:13-36
 168        <activity
-168-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:125:9-127:39
+168-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:125:9-127:39
 169            android:name="com.example.f_food.screen.authentication_authorization.RestaurantLogIn"
-169-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:126:13-80
+169-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:126:13-80
 170            android:exported="true" />
-170-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:127:13-36
+170-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:127:13-36
 171        <activity
-171-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:128:9-130:39
+171-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:128:9-130:39
 172            android:name="com.example.f_food.screen.authentication_authorization.RestaurantSignUp"
-172-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:129:13-81
+172-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:129:13-81
 173            android:exported="true" />
-173-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:130:13-36
+173-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:130:13-36
 174        <activity
-174-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:131:9-133:39
+174-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:131:9-133:39
 175            android:name="com.example.f_food.screen.authentication_authorization.SignUp"
-175-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:132:13-71
+175-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:132:13-71
 176            android:exported="true" />
-176-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:133:13-36
+176-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:133:13-36
 177        <activity
-177-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:134:9-136:39
+177-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:134:9-136:39
 178            android:name="com.example.f_food.screen.features_customer.ManageAddress"
-178-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:135:13-67
+178-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:135:13-67
 179            android:exported="true" />
-179-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:136:13-36
+179-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:136:13-36
 180        <activity
-180-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:137:9-139:39
+180-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:137:9-139:39
 181            android:name="com.example.f_food.screen.features_customer.ReviewAndRating"
-181-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:138:13-69
+181-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:138:13-69
 182            android:exported="true" />
-182-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:139:13-36
+182-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:139:13-36
 183        <activity
-183-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:140:9-142:39
+183-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:140:9-142:39
 184            android:name="com.example.f_food.screen.features_customer.OrderTracking"
-184-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:141:13-67
+184-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:141:13-67
 185            android:exported="true" />
-185-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:142:13-36
+185-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:142:13-36
 186        <activity
-186-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:143:9-145:39
+186-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:143:9-145:39
 187            android:name="com.example.f_food.screen.features_customer.OrderHistory"
-187-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:144:13-66
+187-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:144:13-66
 188            android:exported="true" />
-188-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:145:13-36
+188-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:145:13-36
 189        <activity
-189-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:146:9-154:20
+189-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:146:9-154:20
 190            android:name="com.example.f_food.screen.authentication_authorization.LoginActivity"
-190-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:147:13-78
+190-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:147:13-78
 191            android:exported="true" >
-191-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:148:13-36
+191-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:148:13-36
 192            <intent-filter>
-192-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:149:13-153:29
+192-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:149:13-153:29
 193                <action android:name="android.intent.action.MAIN" />
-193-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:150:17-69
-193-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:150:25-66
+193-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:150:17-69
+193-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:150:25-66
 194
 195                <category android:name="android.intent.category.LAUNCHER" />
-195-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:152:17-77
-195-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:152:27-74
+195-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:152:17-77
+195-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:152:27-74
 196            </intent-filter>
 197        </activity>
 198        <activity
-198-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:155:9-157:39
+198-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:155:9-157:39
 199            android:name="com.example.f_food.screen.features_customer.ViewRestaurantList"
-199-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:156:13-72
+199-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:156:13-72
 200            android:exported="true" />
-200-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:157:13-36
+200-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:157:13-36
 201        <activity
-201-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:158:9-161:47
+201-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:158:9-161:47
 202            android:name="com.example.f_food.screen.admin_management.Restaurant_Management"
-202-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:159:13-74
+202-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:159:13-74
 203            android:exported="true"
-203-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:160:13-36
+203-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:160:13-36
 204            android:theme="@style/Apptheme" />
-204-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:161:13-44
+204-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:161:13-44
 205        <activity
-205-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:162:9-165:47
+205-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:162:9-165:47
 206            android:name="com.example.f_food.screen.admin_management.Customer_Management"
-206-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:163:13-72
+206-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:163:13-72
 207            android:exported="true"
-207-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:164:13-36
+207-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:164:13-36
 208            android:theme="@style/Apptheme" />
-208-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:165:13-44
+208-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:165:13-44
 209        <activity
-209-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:166:9-168:39
+209-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:166:9-168:39
 210            android:name="com.example.f_food.screen.admin_management.Payment_Transactions_Management"
-210-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:167:13-84
+210-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:167:13-84
 211            android:exported="true" />
-211-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:168:13-36
+211-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:168:13-36
 212        <activity
-212-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:169:9-172:47
+212-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:169:9-172:47
 213            android:name="com.example.f_food.screen.admin_management.Policy_Management"
-213-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:170:13-70
+213-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:170:13-70
 214            android:exported="true"
-214-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:171:13-36
+214-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:171:13-36
 215            android:theme="@style/Apptheme" />
-215-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:172:13-44
+215-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:172:13-44
 216        <activity
-216-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:173:9-176:47
+216-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:173:9-176:47
 217            android:name="com.example.f_food.screen.admin_management.Shipper_Management"
-217-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:174:13-71
+217-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:174:13-71
 218            android:exported="true"
-218-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:175:13-36
+218-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:175:13-36
 219            android:theme="@style/Apptheme" />
-219-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:176:13-44
+219-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:176:13-44
 220        <activity
-220-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:177:9-180:47
+220-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:177:9-180:47
 221            android:name="com.example.f_food.screen.admin_management.AdminScreen"
-221-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:178:13-64
+221-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:178:13-64
 222            android:exported="true"
-222-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:179:13-36
+222-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:179:13-36
 223            android:theme="@style/Apptheme" />
-223-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:180:13-44
+223-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:180:13-44
 224        <activity
-224-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:181:9-183:39
+224-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:181:9-183:39
 225            android:name="com.example.f_food.screen.features_customer.ProductListRestaurant"
-225-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:182:13-75
+225-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:182:13-75
 226            android:exported="true" />
-226-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:183:13-36
+226-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:183:13-36
 227        <activity
-227-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:184:9-187:47
+227-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:184:9-187:47
 228            android:name="com.example.f_food.screen.admin_management.AddPolicy"
-228-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:185:13-62
+228-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:185:13-62
 229            android:exported="true"
-229-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:186:13-36
+229-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:186:13-36
 230            android:theme="@style/Apptheme" />
-230-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:187:13-44
+230-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:187:13-44
 231        <activity
-231-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:188:9-190:39
+231-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:188:9-190:39
 232            android:name="com.example.f_food.MainActivity"
-232-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:189:13-41
+232-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:189:13-41
 233            android:exported="true" />
-233-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:190:13-36
+233-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:190:13-36
 234
 235        <meta-data
-235-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:192:9-194:36
+235-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:192:9-194:36
 236            android:name="firebase_messaging_auto_init_enabled"
-236-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:193:13-64
+236-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:193:13-64
 237            android:value="true" />
-237-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:194:13-33
+237-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:194:13-33
 238        <meta-data
-238-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:195:9-197:36
+238-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:195:9-197:36
 239            android:name="firebase_analytics_collection_enabled"
-239-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:196:13-65
+239-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:196:13-65
 240            android:value="true" />
-240-->D:\PE-FER\project - Copy\project_prm\app\src\main\AndroidManifest.xml:197:13-33
+240-->D:\Group6_PRM392\Group6_PRM392\app\src\main\AndroidManifest.xml:197:13-33
 241        <!-- Needs to be explicitly declared on P+ -->
 242        <uses-library
-242-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+242-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
 243            android:name="org.apache.http.legacy"
-243-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+243-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
 244            android:required="false" />
-244-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+244-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\6912246ab713dc0775f64e9bdeabfcf9\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
 245
 246        <service
-246-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:12:9-21:19
+246-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:12:9-21:19
 247            android:name="com.google.firebase.components.ComponentDiscoveryService"
-247-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:13:13-84
+247-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:13:13-84
 248            android:directBootAware="true"
-248-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+248-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 249            android:exported="false" >
-249-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:14:13-37
+249-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:14:13-37
 250            <meta-data
-250-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:15:13-17:85
+250-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:15:13-17:85
 251                android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar"
-251-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:16:17-122
+251-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:16:17-122
 252                android:value="com.google.firebase.components.ComponentRegistrar" />
-252-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:17:17-82
+252-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:17:17-82
 253            <meta-data
-253-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:18:13-20:85
+253-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:18:13-20:85
 254                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
-254-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:19:17-111
+254-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:19:17-111
 255                android:value="com.google.firebase.components.ComponentRegistrar" />
-255-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Administator\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:20:17-82
+255-->[com.google.firebase:firebase-functions:21.2.0] C:\Users\Admin\.gradle\caches\8.9\transforms\4f323fc5817744cb4d731d69e1295aec\transformed\firebase-functions-21.2.0\AndroidManifest.xml:20:17-82
 256            <meta-data
-256-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+256-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
 257                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-257-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+257-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
 258                android:value="com.google.firebase.components.ComponentRegistrar" />
-258-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+258-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ab518a10cbf40edc6086d0734f10950\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
 259            <meta-data
-259-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+259-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
 260                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-260-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+260-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
 261                android:value="com.google.firebase.components.ComponentRegistrar" />
-261-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+261-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
 262            <meta-data
-262-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+262-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
 263                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-263-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+263-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
 264                android:value="com.google.firebase.components.ComponentRegistrar" />
-264-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+264-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d06c0091bb8e34159cef3f47fbab80a7\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
 265            <meta-data
-265-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Administator\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+265-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Admin\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
 266                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-266-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Administator\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+266-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Admin\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
 267                android:value="com.google.firebase.components.ComponentRegistrar" />
-267-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Administator\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+267-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Admin\.gradle\caches\8.9\transforms\66abad2db1c0f6025f6f03cebf9da810\transformed\firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
 268        </service>
 269
 270        <activity
-270-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+270-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 271            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-271-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+271-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 272            android:exported="false"
-272-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+272-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
 273            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-273-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Administator\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+273-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Admin\.gradle\caches\8.9\transforms\f7c77e27b9a6425b9aab044968457df1\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 274
 275        <provider
-275-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+275-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
 276            android:name="com.google.firebase.provider.FirebaseInitProvider"
-276-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+276-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
 277            android:authorities="com.example.f_food.firebaseinitprovider"
-277-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+277-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
 278            android:directBootAware="true"
-278-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+278-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
 279            android:exported="false"
-279-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+279-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
 280            android:initOrder="100" />
-280-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Administator\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+280-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Admin\.gradle\caches\8.9\transforms\d86180b9c826a02050f7eeb2b62a6f92\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
 281        <provider
-281-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+281-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 282            android:name="androidx.startup.InitializationProvider"
-282-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+282-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 283            android:authorities="com.example.f_food.androidx-startup"
-283-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+283-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 284            android:exported="false" >
-284-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+284-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 285            <meta-data
-285-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+285-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 286                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-286-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+286-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 287                android:value="androidx.startup" />
-287-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+287-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\cf24b1a9ef862ab9dfc84a0f3c6660a4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 288            <meta-data
-288-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Administator\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+288-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Admin\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 289                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-289-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Administator\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+289-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Admin\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 290                android:value="androidx.startup" />
-290-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Administator\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+290-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Admin\.gradle\caches\8.9\transforms\001896e0e72b6988d09799290f4d3f9d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 291            <meta-data
-291-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+291-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
 292                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-292-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+292-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
 293                android:value="androidx.startup" />
-293-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+293-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
 294        </provider>
 295
 296        <receiver
-296-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+296-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
 297            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-297-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+297-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
 298            android:directBootAware="false"
-298-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+298-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
 299            android:enabled="true"
-299-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+299-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
 300            android:exported="true"
-300-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+300-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
 301            android:permission="android.permission.DUMP" >
-301-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+301-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 302            <intent-filter>
-302-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+302-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
 303                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-303-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-303-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+303-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+303-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 304            </intent-filter>
 305            <intent-filter>
-305-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+305-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
 306                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-306-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-306-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+306-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+306-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 307            </intent-filter>
 308            <intent-filter>
-308-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+308-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
 309                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-309-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-309-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+309-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+309-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 310            </intent-filter>
 311            <intent-filter>
-311-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+311-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
 312                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-312-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-312-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Administator\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+312-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+312-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Admin\.gradle\caches\8.9\transforms\9ebc8de09bb922e40d204d21dbc6d4e2\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
 313            </intent-filter>
 314        </receiver>
 315
 316        <meta-data
-316-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+316-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
 317            android:name="com.google.android.gms.version"
-317-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+317-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
 318            android:value="@integer/google_play_services_version" />
-318-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Administator\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+318-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Admin\.gradle\caches\8.9\transforms\7b7354c467d61b6b46f63d71e19b0e6d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
 319
 320        <service
-320-->[androidx.room:room-runtime:2.6.1] C:\Users\Administator\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+320-->[androidx.room:room-runtime:2.6.1] C:\Users\Admin\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
 321            android:name="androidx.room.MultiInstanceInvalidationService"
-321-->[androidx.room:room-runtime:2.6.1] C:\Users\Administator\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+321-->[androidx.room:room-runtime:2.6.1] C:\Users\Admin\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 322            android:directBootAware="true"
-322-->[androidx.room:room-runtime:2.6.1] C:\Users\Administator\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+322-->[androidx.room:room-runtime:2.6.1] C:\Users\Admin\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
 323            android:exported="false" />
-323-->[androidx.room:room-runtime:2.6.1] C:\Users\Administator\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+323-->[androidx.room:room-runtime:2.6.1] C:\Users\Admin\.gradle\caches\8.9\transforms\6f2ad7b562bb27eb03296fd9081eeabb\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
 324
 325        <provider
-325-->[com.squareup.picasso:picasso:2.71828] C:\Users\Administator\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+325-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
 326            android:name="com.squareup.picasso.PicassoProvider"
-326-->[com.squareup.picasso:picasso:2.71828] C:\Users\Administator\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+326-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
 327            android:authorities="com.example.f_food.com.squareup.picasso"
-327-->[com.squareup.picasso:picasso:2.71828] C:\Users\Administator\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+327-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
 328            android:exported="false" />
-328-->[com.squareup.picasso:picasso:2.71828] C:\Users\Administator\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+328-->[com.squareup.picasso:picasso:2.71828] C:\Users\Admin\.gradle\caches\8.9\transforms\423306c1ccbbceb034bfaddadb0c3bda\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
 329    </application>
 330
 331</manifest>

@@ -4,7 +4,7 @@
             "outputFile": "com.example.f_food.app-mergeDebugResources-41:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administator\\.gradle\\caches\\8.9\\transforms\\c67d1d264b9a110488c928131f2924bb\\transformed\\appcompat-1.7.0\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\c67d1d264b9a110488c928131f2924bb\\transformed\\appcompat-1.7.0\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
