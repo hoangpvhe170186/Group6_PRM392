@@ -1,0 +1,224 @@
+package com.example.f_food.adapter;
+
+import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.f_food.dao.CartManager;
+import com.example.f_food.entity.CartItem;
+import com.example.f_food.R;
+import com.google.android.material.button.MaterialButton;
+import com.squareup.picasso.Picasso;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
+public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder> {
+    private List<CartItem> cartItems;
+    private Context context;
+    private CartUpdateListener cartUpdateListener;
+    private final Handler handler = new Handler(Looper.getMainLooper());
+    private final CartManager cartManager = CartManager.getInstance();
+
+    public interface CartUpdateListener {
+        void onCartUpdated();
+    }
+
+    public CartAdapter(Context context, List<CartItem> cartItems, CartUpdateListener listener) {
+        this.context = context;
+        this.cartItems = new ArrayList<>(cartItems != null ? cartItems : new ArrayList<>()); // Handle null input
+        this.cartUpdateListener = listener;
+    }
+
+    @Override
+    public CartViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_cart, parent, false);
+        return new CartViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(CartViewHolder holder, int position) {
+        if (position >= cartItems.size()) return; // Safety check
+
+        CartItem item = cartItems.get(position);
+
+        holder.txtProductName.setText(item.getProduct().getName());
+
+        NumberFormat formatter = NumberFormat.getInstance(new Locale("vi", "VN"));
+        holder.txtProductPrice.setText(formatter.format(item.getProduct().getPrice()) + " VNĐ");
+
+        if (item.getProduct().getImageUrl() != null && !item.getProduct().getImageUrl().isEmpty()) {
+            Picasso.get()
+                    .load(item.getProduct().getImageUrl())
+                    .resize(50, 50)
+                    .centerCrop()
+                    .into(holder.imgProduct);
+        }
+
+        holder.chkSelectItem.setOnCheckedChangeListener(null); // Prevent recursive calls
+        holder.chkSelectItem.setChecked(item.isSelected());
+
+        // Set initial quantity and attach listeners
+        holder.edtQuantity.removeTextChangedListener(holder.textWatcher); // Remove existing listener
+        holder.edtQuantity.setText(String.valueOf(item.getQuantity()));
+        holder.textWatcher = new CustomTextWatcher(holder, position); // Reattach with new instance
+        holder.edtQuantity.addTextChangedListener(holder.textWatcher);
+        setupQuantityListeners(holder, position);
+
+        // Handle checkbox selection
+        holder.chkSelectItem.setOnClickListener(v -> {
+            item.setSelected(holder.chkSelectItem.isChecked());
+            if (cartUpdateListener != null) {
+                cartUpdateListener.onCartUpdated();
+            }
+        });
+
+        // Handle remove button
+        holder.btnRemove.setOnClickListener(v -> {
+            int adapterPosition = holder.getAdapterPosition();
+            if (adapterPosition != RecyclerView.NO_POSITION) {
+                removeItem(adapterPosition);
+            }
+        });
+    }
+
+    private void setupQuantityListeners(CartViewHolder holder, int position) {
+        // Handle decrease button
+        holder.btnDecrease.setOnClickListener(v -> {
+            int adapterPosition = holder.getAdapterPosition();
+            if (adapterPosition != RecyclerView.NO_POSITION) {
+                int currentQuantity = cartItems.get(adapterPosition).getQuantity();
+                if (currentQuantity > 1) {
+                    updateQuantity(adapterPosition, currentQuantity - 1);
+                } else if (currentQuantity == 1) {
+                    updateQuantity(adapterPosition, 0);
+                }
+            }
+        });
+
+        // Handle increase button
+        holder.btnIncrease.setOnClickListener(v -> {
+            int adapterPosition = holder.getAdapterPosition();
+            if (adapterPosition != RecyclerView.NO_POSITION) {
+                int currentQuantity = cartItems.get(adapterPosition).getQuantity();
+                updateQuantity(adapterPosition, currentQuantity + 1);
+            }
+        });
+    }
+
+    private void updateQuantity(int position, int newQuantity) {
+        if (position >= 0 && position < cartItems.size()) {
+            CartItem item = cartItems.get(position);
+            item.setQuantity(newQuantity);
+            cartManager.updateQuantity(item.getProduct(), newQuantity); // Sync with CartManager
+            if (newQuantity == 0) {
+                removeItem(position);
+            } else {
+                cartItems.set(position, item);
+                // Ensure UI update is safe
+                handler.post(() -> {
+                    if (position < getItemCount()) {
+                        notifyItemChanged(position);
+                    }
+                });
+            }
+            if (cartUpdateListener != null) {
+                cartUpdateListener.onCartUpdated();
+            }
+        }
+    }
+
+    private void removeItem(int position) {
+        if (position >= 0 && position < cartItems.size()) {
+            CartItem item = cartItems.get(position);
+            cartManager.removeFromCart(item.getProduct()); // Sync with CartManager
+            cartItems.remove(position);
+            // Ensure UI update is safe
+            handler.post(() -> {
+                notifyItemRemoved(position);
+                notifyItemRangeChanged(position, cartItems.size());
+            });
+            if (cartUpdateListener != null) {
+                cartUpdateListener.onCartUpdated();
+            }
+        }
+    }
+
+    @Override
+    public int getItemCount() {
+        return cartItems.size();
+    }
+
+    public List<CartItem> getCartItems() {
+        return new ArrayList<>(cartItems); // Return a copy to prevent external modification
+    }
+
+    public static class CartViewHolder extends RecyclerView.ViewHolder {
+        TextView txtProductName, txtProductPrice;
+        ImageView imgProduct, btnRemove;
+        EditText edtQuantity;
+        CheckBox chkSelectItem;
+        MaterialButton btnDecrease, btnIncrease;
+        CustomTextWatcher textWatcher;
+
+        public CartViewHolder(View itemView) {
+            super(itemView);
+            imgProduct = itemView.findViewById(R.id.imgProduct);
+            txtProductName = itemView.findViewById(R.id.txtProductName);
+            txtProductPrice = itemView.findViewById(R.id.txtProductPrice);
+            edtQuantity = itemView.findViewById(R.id.edtQuantity);
+            btnRemove = itemView.findViewById(R.id.btnRemove);
+            chkSelectItem = itemView.findViewById(R.id.chkSelectItem);
+            btnDecrease = itemView.findViewById(R.id.btnDecrease);
+            btnIncrease = itemView.findViewById(R.id.btnIncrease);
+        }
+    }
+
+    private class CustomTextWatcher implements TextWatcher {
+        private final CartViewHolder holder;
+        private final int position;
+
+        public CustomTextWatcher(CartViewHolder holder, int position) {
+            this.holder = holder;
+            this.position = position;
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            int adapterPosition = holder.getAdapterPosition();
+            if (adapterPosition == RecyclerView.NO_POSITION) return;
+
+            try {
+                int newQuantity = s.toString().isEmpty() ? 0 : Integer.parseInt(s.toString());
+                if (newQuantity < 0) {
+                    newQuantity = 0;
+                }
+                if (holder.edtQuantity.getTag() == null || !holder.edtQuantity.getTag().equals("updating")) {
+                    // Fix: Use CartAdapter.this to reference the enclosing adapter instance
+                    CartAdapter.this.updateQuantity(adapterPosition, newQuantity);
+                }
+            } catch (NumberFormatException e) {
+                // Do nothing, let the current value persist
+            }
+        }
+    }
+}

@@ -1,0 +1,325 @@
+package com.example.f_food.screen.features_customer;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupMenu;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.f_food.MainActivity;
+import com.example.f_food.R;
+import com.example.f_food.adapter.FoodListAdapter;
+import com.example.f_food.adapter.HomeCustomerAdapter;
+import com.example.f_food.entity.Category;
+import com.example.f_food.entity.Food;
+import com.example.f_food.repository.CategoryRepository;
+import com.example.f_food.repository.FoodRepository;
+import com.example.f_food.screen.authentication_authorization.LoginActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.ai.client.generativeai.GenerativeModel;
+import com.google.ai.client.generativeai.java.GenerativeModelFutures;
+import com.google.ai.client.generativeai.type.Content;
+import com.google.ai.client.generativeai.type.GenerateContentResponse;
+import com.google.common.util.concurrent.FutureCallback;
+import com.google.common.util.concurrent.Futures;
+import com.google.common.util.concurrent.ListenableFuture;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+
+public class HomeStart extends AppCompatActivity {
+
+    private RecyclerView recyclerView;
+    private HomeCustomerAdapter adapter;
+    private List<Food> foodList;
+    private FoodRepository foodRepository;
+    private LinearLayout chatboxContainer;
+    private EditText chatInput;
+    private TextView chatResponse;
+    private ImageButton chatIconButton;
+    private boolean isChatboxVisible = false;
+    private GenerativeModelFutures generativeModel;
+    private TextView chatGreeting;
+    private Button sendButton;
+
+    TextView fullname;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_home_start);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.HomeStart), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        // Initialize repository
+        foodRepository = new FoodRepository(this);
+
+        // Initialize Gemini API client
+        GenerativeModel gm = new GenerativeModel(
+                "gemini-1.5-flash",
+                "AIzaSyAW8zyr7QVCObktxSfkvdewk8We2nUASLo"
+        );
+        generativeModel = GenerativeModelFutures.from(gm);
+
+        ImageView menuIcon = findViewById(R.id.menuIcon);
+        menuIcon.setOnClickListener(v -> showPopupMenu(v));
+
+        hideSystemUI();
+        getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(visibility -> hideSystemUI());
+
+        fullname = findViewById(R.id.AccountLogin);
+        Intent intent = getIntent();
+        String fullname1 = intent.getStringExtra("fullName");
+        fullname.setText(fullname1);
+
+        // Initialize chatbox components
+        chatboxContainer = findViewById(R.id.chatboxContainer);
+        chatInput = findViewById(R.id.chatInput);
+        chatResponse = findViewById(R.id.chatResponse);
+        chatIconButton = findViewById(R.id.chatIconButton);
+        chatGreeting = findViewById(R.id.chatGreeting);
+        sendButton = findViewById(R.id.sendButton);
+        chatboxContainer.setVisibility(View.GONE); // Initially hidden
+
+        // Toggle chatbox visibility and show greeting
+        chatIconButton.setOnClickListener(v -> {
+            isChatboxVisible = !isChatboxVisible;
+            chatboxContainer.setVisibility(isChatboxVisible ? View.VISIBLE : View.GONE);
+            if (isChatboxVisible) {
+                chatGreeting.setVisibility(View.VISIBLE);
+                chatResponse.setText("");
+                chatInput.setText("");
+            } else {
+                chatGreeting.setVisibility(View.GONE);
+            }
+        });
+
+        // Handle send button click
+        sendButton.setOnClickListener(v -> {
+            String query = chatInput.getText().toString().trim();
+            if (!query.isEmpty()) {
+                handleChatQuery(query);
+                chatInput.setText("");
+            }
+        });
+
+        // Remove real-time text change listener from chatInput
+        chatInput.setOnClickListener(v -> {
+            // Clear greeting when user starts typing
+            if (chatGreeting.getVisibility() == View.VISIBLE) {
+                chatGreeting.setVisibility(View.GONE);
+            }
+        });
+
+        EditText search_bar = findViewById(R.id.search_bar);
+        search_bar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (s != null) {
+                    searchFoodByName(s.toString().trim());
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        init();
+        adapter = new HomeCustomerAdapter(this, foodList, new FoodListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int foodId) {
+                Intent intent = new Intent(HomeStart.this, FoodDetailActivity.class);
+                intent.putExtra("foodId", foodId);
+                startActivity(intent);
+            }
+        });
+        recyclerView.setAdapter(adapter);
+
+        CategoryRepository categoryRepository = new CategoryRepository(this);
+        LinearLayout categoryContainer = findViewById(R.id.categoryContainer);
+        List<Category> categoryList = categoryRepository.getAllCategories();
+        List<String> categories = new ArrayList<>();
+        categories.add("All");
+        for (Category category : categoryList) {
+            categories.add(category.getName());
+        }
+
+        if (categories == null || categories.isEmpty()) {
+            categories = Arrays.asList("All Coffee", "Macchiato", "Latte", "Espresso", "Cappuccino");
+        }
+
+        for (String category : categories) {
+            Button button = new Button(this);
+            button.setText(category);
+            button.setPadding(20, 10, 20, 10);
+            button.setTextColor(ContextCompat.getColor(this, R.color.brown));
+
+            if (category.equals("All Coffee")) {
+                button.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.brown)));
+                button.setTextColor(Color.WHITE);
+            } else {
+                button.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.orange)));
+            }
+
+            button.setOnClickListener(v -> {
+                Toast.makeText(this, "Chọn: " + category, Toast.LENGTH_SHORT).show();
+                if (category.equals("All")) {
+                    foodList = foodRepository.getAllFoods();
+                } else {
+                    int id = categoryRepository.getCategoryByName(category).getCategoryId();
+                    foodList = foodRepository.getFoodsByCategoryId(id);
+                }
+                adapter.updateData(foodList);
+            });
+
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            params.setMargins(10, 0, 0, 0);
+            button.setLayoutParams(params);
+            categoryContainer.addView(button);
+        }
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            Intent intent1 = null;
+
+            if (itemId == R.id.nav_home) {
+                intent1 = new Intent(this, HomeStart.class);
+            } else if (itemId == R.id.nav_bag) {
+                intent1 = new Intent(this, OrderHistory.class);
+            } else if (itemId == R.id.nav_orders) {
+                intent1 = new Intent(this, ViewRestaurantList.class);
+            } else if (itemId == R.id.nav_profile) {
+                intent1 = new Intent(this, activity_cart.class);
+            }
+            if (intent1 != null) {
+                startActivity(intent1);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+            return true;
+        });
+    }
+
+    private void init() {
+        Intent intent = getIntent();
+        foodList = foodRepository.getAllFoods();
+    }
+
+    private void searchFoodByName(String query) {
+        List<Food> filteredList;
+        if (query.isEmpty()) {
+            filteredList = foodRepository.getAllFoods();
+        } else {
+            filteredList = foodRepository.getFoodsByName(query);
+        }
+        adapter.updateData(filteredList);
+    }
+
+    private void handleChatQuery(String query) {
+        chatResponse.setText("Processing...");
+        List<Food> matchingFoods = foodRepository.getFoodsByName(query);
+        if (!matchingFoods.isEmpty()) {
+            // Respond with local product data
+            StringBuilder response = new StringBuilder("Found the following foods:\n");
+            for (Food food : matchingFoods) {
+                response.append("- ").append(food.getName()).append(": $").append(food.getPrice()).append("\n");
+            }
+            runOnUiThread(() -> chatResponse.setText(response.toString()));
+        } else {
+            // Fallback to Gemini API for non-product queries
+            Content content = new Content.Builder()
+                    .addText(query)
+                    .build();
+            ListenableFuture<GenerateContentResponse> future = generativeModel.generateContent(content);
+            Executor executor = Executors.newSingleThreadExecutor();
+            Futures.addCallback(future, new FutureCallback<GenerateContentResponse>() {
+                @Override
+                public void onSuccess(GenerateContentResponse result) {
+                    String apiResponse = result.getText();
+                    runOnUiThread(() -> chatResponse.setText(apiResponse != null ? apiResponse : "No response available."));
+                }
+
+                @Override
+                public void onFailure(Throwable t) {
+                    runOnUiThread(() -> chatResponse.setText("Sorry, I couldn't process your query. Please try again."));
+                }
+            }, executor);
+        }
+    }
+
+    private void hideSystemUI() {
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
+                        View.SYSTEM_UI_FLAG_FULLSCREEN
+        );
+    }
+
+    private void showPopupMenu(View view) {
+        PopupMenu popup = new PopupMenu(this, view);
+        popup.getMenuInflater().inflate(R.menu.right_nav_menu, popup.getMenu());
+
+        popup.setOnMenuItemClickListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.action_profile) {
+                Intent intent = new Intent(HomeStart.this, CustomerProfile.class);
+                startActivity(intent);
+                return true;
+            } else if (itemId == R.id.action_logout) {
+                Toast.makeText(HomeStart.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                performLogout();
+                return true;
+            }
+            return false;
+        });
+
+        popup.show();
+    }
+
+    private void performLogout() {
+        SharedPreferences preferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.apply();
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+}
