@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.f_food.app-mergeDebugResources-41:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.example.chatapp-mergeDebugResources-42:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.9\\transforms\\eb642585ba6805c65063b5fa3c45ad94\\transformed\\material-1.12.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\Administator\\.gradle\\caches\\8.11.1\\transforms\\dd5d17e7749f8465fef30034c9c29cfc\\transformed\\material-1.13.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
