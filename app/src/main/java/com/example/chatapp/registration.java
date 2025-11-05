@@ -79,6 +79,9 @@ public class registration extends AppCompatActivity {
                 String cPassword = rg_repassword.getText().toString();
                 String status = "Hey I'm Using This Application";
 
+                // Hiển thị progress dialog ngay từ đầu
+                progressDialog.show();
+
                 if (TextUtils.isEmpty(namee) || TextUtils.isEmpty(emaill) ||
                         TextUtils.isEmpty(Password) || TextUtils.isEmpty(cPassword)){
                     progressDialog.dismiss();
@@ -98,7 +101,8 @@ public class registration extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
                                 String id = task.getResult().getUser().getUid();
-                                DatabaseReference reference = database.getReference().child("user").child(id);
+                                // Sử dụng Db.get() thay vì database trực tiếp
+                                DatabaseReference reference = Db.get().getReference().child("user").child(id);
                                 StorageReference storageReference = storage.getReference().child("Upload").child(id);
 
                                 if (imageURI!=null){
@@ -114,46 +118,51 @@ public class registration extends AppCompatActivity {
                                                         reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
+                                                                progressDialog.dismiss();
                                                                 if (task.isSuccessful()){
-                                                                    progressDialog.show();
-                                                                    Intent intent = new Intent(registration.this,MainActivity.class);
+                                                                    Toast.makeText(registration.this, "Registration Successful! Please login.", Toast.LENGTH_SHORT).show();
+                                                                    Intent intent = new Intent(registration.this, login.class);
                                                                     startActivity(intent);
                                                                     finish();
                                                                 }else {
-                                                                    Toast.makeText(registration.this, "Error in creating the user", Toast.LENGTH_SHORT).show();
+                                                                    Toast.makeText(registration.this, "Error in creating the user: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                                                 }
                                                             }
                                                         });
                                                     }
                                                 });
+                                            } else {
+                                                progressDialog.dismiss();
+                                                Toast.makeText(registration.this, "Image upload failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
                                 }else {
                                     String status = "Hey I'm Using This Application";
-                                    imageuri = "http://127.0.0.1:9199/v0/b/chat-app-22abe.firebasestorage.app/o/man.png?alt=media&token=2e95204b-263d-4598-8144-2ed238a22932";
+                                    imageuri = "https://via.placeholder.com/150"; // URL ảnh mặc định đơn giản
                                     Users users = new Users(id,namee,emaill,Password,imageuri,status);
                                     reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+                                            progressDialog.dismiss();
                                             if (task.isSuccessful()){
-                                                progressDialog.show();
-                                                Intent intent = new Intent(registration.this,MainActivity.class);
+                                                Toast.makeText(registration.this, "Registration Successful! Please login.", Toast.LENGTH_SHORT).show();
+                                                Intent intent = new Intent(registration.this, login.class);
                                                 startActivity(intent);
                                                 finish();
                                             }else {
-                                                Toast.makeText(registration.this, "Error in creating the user", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(registration.this, "Error in creating the user: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
                                 }
                             }else {
-                                Toast.makeText(registration.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                progressDialog.dismiss();
+                                Toast.makeText(registration.this, "Registration failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
                 }
-
             }
         });
 

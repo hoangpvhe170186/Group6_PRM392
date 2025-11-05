@@ -1,226 +1,278 @@
 [
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_man.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\man.png"
+        "merged": "com.example.chatapp-debug-72:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_dancing.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\dancing.ttf"
+        "merged": "com.example.chatapp-debug-72:/drawable_empty_background.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/empty_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_chat.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/chat.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\layout_activity_registration.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\layout\\activity_registration.xml"
+        "merged": "com.example.chatapp-debug-72:/layout_activity_chat_win.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_chat_win.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_chatone.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/chatone.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_spartan_regular.otf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\spartan_regular.otf"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_sett.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/sett.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\layout\\activity_main.xml"
+        "merged": "com.example.chatapp-debug-72:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_login_backk.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\login_backk.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_av.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/av.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_one.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\one.png"
+        "merged": "com.example.chatapp-debug-72:/font_poppins_black.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/poppins_black.ttf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_chatback.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\chatback.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_mainback.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/mainback.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\xml\\backup_rules.xml"
+        "merged": "com.example.chatapp-debug-72:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_spartan_bold.otf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\spartan_bold.otf"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_regis_back.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/regis_back.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_logout.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/logout.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_chat.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\chat.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_imageadd.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/imageadd.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_logout.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\logout.png"
+        "merged": "com.example.chatapp-debug-72:/font_spartan_bold.otf.flat",
+        "source": "com.example.chatapp-main-74:/font/spartan_bold.otf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_fthree.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\fthree.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_photocamera.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/photocamera.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\layout\\activity_login.xml"
+        "merged": "com.example.chatapp-debug-72:/layout_dialog_layout.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/dialog_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_sett.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\sett.png"
+        "merged": "com.example.chatapp-debug-72:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_sendbut.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\sendbut.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_sendbut.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/sendbut.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_bhu.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\bhu.ttf"
+        "merged": "com.example.chatapp-debug-72:/xml_backup_rules.xml.flat",
+        "source": "com.example.chatapp-main-74:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_cameraone.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\cameraone.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_settingback.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/settingback.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_mainback.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\mainback.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_login_backk.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/login_backk.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_power.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\power.png"
+        "merged": "com.example.chatapp-debug-72:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_av.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\av.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_settone.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/settone.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_poppins_bold.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\poppins_bold.ttf"
+        "merged": "com.example.chatapp-debug-72:/layout_activity_setting.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_setting.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.chatapp-debug-72:/drawable_reciver_shape.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/reciver_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_poppins_italic.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\poppins_italic.ttf"
+        "merged": "com.example.chatapp-debug-72:/xml_network_security_config.xml.flat",
+        "source": "com.example.chatapp-main-74:/xml/network_security_config.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_two.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/two.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable_sender_shape.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/sender_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_power.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/power.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatapp-debug-72:/font_poppins_bold.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/poppins_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_two.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\two.png"
+        "merged": "com.example.chatapp-debug-72:/anim_bottom_animation.xml.flat",
+        "source": "com.example.chatapp-main-74:/anim/bottom_animation.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_chatone.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\chatone.png"
+        "merged": "com.example.chatapp-debug-72:/layout_reciver_layout.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/reciver_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable_shapedialog.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/shapedialog.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_spartan_thin.otf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\spartan_thin.otf"
+        "merged": "com.example.chatapp-debug-72:/font_poppins_regular.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/poppins_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatapp-debug-72:/font_apptext.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/apptext.ttf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_poppins_black.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\poppins_black.ttf"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_man.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/man.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_settone.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\settone.png"
+        "merged": "com.example.chatapp-debug-72:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_imageadd.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\imageadd.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_ftwo.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/ftwo.png"
     },
     {
-        "merged": "com.example.chatapp-debug-44:/xml_network_security_config.xml.flat",
-        "source": "com.example.chatapp-main-46:/xml/network_security_config.xml"
+        "merged": "com.example.chatapp-debug-72:/font_spartan_thin.otf.flat",
+        "source": "com.example.chatapp-main-74:/font/spartan_thin.otf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_fone.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\fone.png"
+        "merged": "com.example.chatapp-debug-72:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_cameraone.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/cameraone.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_poppins_regular.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\poppins_regular.ttf"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_one.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/one.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\layout\\activity_splash.xml"
+        "merged": "com.example.chatapp-debug-72:/layout_sender_layout.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/sender_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_camera.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\camera.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_checked.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/checked.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.chatapp-debug-72:/drawable_bordermain.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/bordermain.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_logo_no_back.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\logo_no_back.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_chatback.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/chatback.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_checked.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\checked.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_logo_no_back.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/logo_no_back.png"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\font_apptext.ttf.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\font\\apptext.ttf"
+        "merged": "com.example.chatapp-debug-72:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.chatapp-debug-72:/font_poppins_italic.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/poppins_italic.ttf"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_ftwo.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\ftwo.png"
+        "merged": "com.example.chatapp-debug-72:/layout_activity_registration.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_registration.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_settingback.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\settingback.png"
+        "merged": "com.example.chatapp-debug-72:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.chatapp-main-74:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_photocamera.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\photocamera.png"
+        "merged": "com.example.chatapp-debug-72:/layout_user_item.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/user_item.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.chatapp-debug-72:/anim_top_animation.xml.flat",
+        "source": "com.example.chatapp-main-74:/anim/top_animation.xml"
     },
     {
-        "merged": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-debug-44:\\drawable-xhdpi_regis_back.png.flat",
-        "source": "C:\\Users\\Administator\\.gradle\\daemon\\8.11.1\\com.example.chatapp-main-46:\\drawable-xhdpi\\regis_back.png"
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_camera.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/camera.png"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/font_bhu.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/bhu.ttf"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/layout_activity_login.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_fone.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/fone.png"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/layout_activity_main.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/layout_activity_splash.xml.flat",
+        "source": "com.example.chatapp-main-74:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/drawable-xhdpi_fthree.png.flat",
+        "source": "com.example.chatapp-main-74:/drawable-xhdpi/fthree.png"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.chatapp-main-74:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/font_spartan_regular.otf.flat",
+        "source": "com.example.chatapp-main-74:/font/spartan_regular.otf"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/font_dancing.ttf.flat",
+        "source": "com.example.chatapp-main-74:/font/dancing.ttf"
+    },
+    {
+        "merged": "com.example.chatapp-debug-72:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chatapp-main-74:/mipmap-xhdpi/ic_launcher_round.webp"
     }
 ]

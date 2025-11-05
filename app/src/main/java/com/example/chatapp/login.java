@@ -37,7 +37,6 @@ public class login extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please Wait...");
         progressDialog.setCancelable(false);
-        getSupportActionBar().hide();
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logbutton);
         email = findViewById(R.id.editTexLogEmail);
@@ -80,6 +79,7 @@ public class login extends AppCompatActivity {
                             if (task.isSuccessful()){
                                 progressDialog.show();
                                 try {
+                                    // GIỮ NGUYÊN: Chuyển đến MainActivity sau khi login thành công
                                     Intent intent = new Intent(login.this , MainActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -92,8 +92,6 @@ public class login extends AppCompatActivity {
                         }
                     });
                 }
-
-
             }
         });
 
