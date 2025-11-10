@@ -10,34 +10,70 @@ import com.google.firebase.storage.FirebaseStorage;
 
 public class MyApp extends Application {
   private static final String TAG = "MyApp";
+  private static final String EMU_HOST = "10.0.2.2";
+  private static final int AUTH_PORT = 9099;
+  private static final int DATABASE_PORT = 9000;
+  private static final int STORAGE_PORT = 9199;
+
+  // THÊM DATABASE URL CHO EMULATOR
+  private static final String DATABASE_URL = "http://" + EMU_HOST + ":" + DATABASE_PORT + "?ns=chat-app-22abe-default-rtdb";
 
   @Override
   public void onCreate() {
     super.onCreate();
 
     try {
-      // Khởi tạo Firebase
       FirebaseApp.initializeApp(this);
-      Log.d(TAG, "Firebase initialized successfully");
+      Log.d(TAG, "Firebase initialized");
 
-      String host = "10.0.2.2"; // Android Emulator -> PC
+      // CẤU HÌNH DATABASE TRƯỚC KHI KẾT NỐI EMULATOR
+      setupDatabase();
 
-      // Sử dụng emulator với try-catch
-      try {
-        FirebaseAuth.getInstance().useEmulator(host, 9099);
-        FirebaseDatabase.getInstance().useEmulator(host, 9000);
-        FirebaseStorage.getInstance().useEmulator(host, 9199);
-        Log.d(TAG, "All emulators connected successfully");
-      } catch (Exception e) {
-        Log.e(TAG, "Error connecting to emulators: " + e.getMessage());
-        // Tiếp tục chạy ngay cả khi không kết nối được emulator
-      }
+      // Sau đó kết nối emulators
+      setupEmulators();
 
-      // Tắt persistence để tránh cache
-      FirebaseDatabase.getInstance().setPersistenceEnabled(false);
+      Log.d(TAG, "✓ All Firebase services configured successfully");
 
     } catch (Exception e) {
-      Log.e(TAG, "Firebase initialization failed: " + e.getMessage());
+      Log.e(TAG, "Firebase init failed: " + e.getMessage());
+    }
+  }
+
+  private void setupDatabase() {
+    try {
+      // QUAN TRỌNG: Get instance với database URL cụ thể
+      FirebaseDatabase database = FirebaseDatabase.getInstance(DATABASE_URL);
+      database.setPersistenceEnabled(true);
+      database.setLogLevel(com.google.firebase.database.Logger.Level.DEBUG);
+      Log.d(TAG, "✓ Database configured with URL: " + DATABASE_URL);
+    } catch (Exception e) {
+      Log.e(TAG, "✗ Database configuration failed: " + e.getMessage());
+    }
+  }
+
+  private void setupEmulators() {
+    try {
+      Log.d(TAG, "Setting up Firebase Emulators...");
+
+      // Database Emulator - SỬ DỤNG INSTANCE ĐÃ ĐƯỢC CẤU HÌNH
+      FirebaseDatabase database = FirebaseDatabase.getInstance(DATABASE_URL);
+      database.useEmulator(EMU_HOST, DATABASE_PORT);
+      Log.d(TAG, "✓ Database emulator connected to " + EMU_HOST + ":" + DATABASE_PORT);
+
+      // Auth Emulator
+      FirebaseAuth auth = FirebaseAuth.getInstance();
+      auth.useEmulator(EMU_HOST, AUTH_PORT);
+      Log.d(TAG, "✓ Auth emulator connected to " + EMU_HOST + ":" + AUTH_PORT);
+
+      // Storage Emulator
+      FirebaseStorage storage = FirebaseStorage.getInstance();
+      storage.useEmulator(EMU_HOST, STORAGE_PORT);
+      Log.d(TAG, "✓ Storage emulator connected to " + EMU_HOST + ":" + STORAGE_PORT);
+
+      Log.d(TAG, "✓ All emulators connected successfully");
+
+    } catch (Exception e) {
+      Log.e(TAG, "✗ Emulator connection failed: " + e.getMessage());
     }
   }
 }

@@ -34,6 +34,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.ChatApp"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.chatapp.AdminActivity" />
         <activity
             android:name="com.example.chatapp.setting"
             android:exported="false" />

@@ -5,21 +5,25 @@ import android.util.Log;
 
 public final class Db {
     private static final String TAG = "Db";
-    private static final String EMU_HOST = "10.0.2.2";
-    private static final int EMU_PORT = 9000;
-    private static final String RTDB_NS = "chat-app-22abe-default-rtdb";
+    private static FirebaseDatabase database;
+
+    // THÊM DATABASE URL
+    private static final String DATABASE_URL = "http://10.0.2.2:9000?ns=chat-app-22abe-default-rtdb";
 
     public static FirebaseDatabase get() {
-        try {
-            String url = "http://" + EMU_HOST + ":" + EMU_PORT + "?ns=" + RTDB_NS;
-            FirebaseDatabase db = FirebaseDatabase.getInstance(url);
-            Log.d(TAG, "Database URL: " + url);
-            return db;
-        } catch (Exception e) {
-            Log.e(TAG, "Error getting database instance: " + e.getMessage());
-            // Fallback to default database if emulator fails
-            return FirebaseDatabase.getInstance();
+        if (database == null) {
+            try {
+                // SỬ DỤNG DATABASE URL CỤ THỂ
+                database = FirebaseDatabase.getInstance(DATABASE_URL);
+                database.setLogLevel(com.google.firebase.database.Logger.Level.DEBUG);
+                Log.d(TAG, "Database instance obtained with URL: " + DATABASE_URL);
+            } catch (Exception e) {
+                Log.e(TAG, "Error getting database instance: " + e.getMessage());
+                // Fallback to default instance
+                database = FirebaseDatabase.getInstance();
+            }
         }
+        return database;
     }
 
     private Db() {}

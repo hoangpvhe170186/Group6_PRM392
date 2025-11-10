@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase database;
     ArrayList<Users> usersArrayList;
     ImageView imglogout;
-    ImageView settingBut; // ⭐ THÊM DÒNG NÀY
+    ImageView settingBut;
 
     private static final String TAG = "MainActivity";
 
@@ -41,15 +41,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FirebaseDatabase db = Db.get();
-        Log.d("DB", "dbUrl=" + db.getApp().getOptions().getDatabaseUrl());
-        db.getReference("_ping_from_app").setValue("hello")
-                .addOnCompleteListener(t -> Log.d("DB", "ping=" + t.isSuccessful()
-                        + (t.getException()!=null ? " err="+t.getException().getMessage() : "")));
 
         Log.d(TAG, "MainActivity onCreate started");
 
-        // Kiểm tra Firebase Auth trước
+        // Test Firebase connection đầu tiên
+        testFirebaseConnection();
+
+        // Kiểm tra Firebase Auth
         auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() == null) {
             Log.d(TAG, "No user logged in, redirecting to login");
@@ -60,13 +58,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Log.d(TAG, "User is logged in: " + auth.getCurrentUser().getEmail());
+        Log.d(TAG, "User UID: " + auth.getCurrentUser().getUid());
 
         database = Db.get();
 
         // ⚡ QUAN TRỌNG: Sửa từ "Users" thành "user"
         DatabaseReference reference = Db.get()
                 .getReference()
-                .child("user"); // đúng với key trong Emulator
+                .child("user");
 
         usersArrayList = new ArrayList<>();
 
@@ -146,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "logoutimg not found in layout");
         }
 
-        // ⭐ THÊM PHẦN NÀY: Xử lý nút Settings
+        // Xử lý nút Settings
         settingBut = findViewById(R.id.settingBut);
         if (settingBut != null) {
             settingBut.setOnClickListener(new View.OnClickListener() {
@@ -161,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "settingBut not found in layout");
         }
 
-        // ⭐ CÓ THỂ THÊM: Xử lý các nút khác trong bottom bar nếu cần
+        // Xử lý các nút khác trong bottom bar
         ImageView camBut = findViewById(R.id.camBut);
         ImageView chatBut = findViewById(R.id.chatBut);
 
@@ -178,18 +177,162 @@ public class MainActivity extends AppCompatActivity {
             chatBut.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // Đã ở trong chat activity, có thể làm mới hoặc hiển thị thông báo
                     Toast.makeText(MainActivity.this, "You're already in chat", Toast.LENGTH_SHORT).show();
                 }
             });
         }
 
         Log.d(TAG, "MainActivity setup completed");
+
+    }
+
+    /**
+     * Phương thức test kết nối Firebase
+     * Test cả Database và Auth
+     */
+    private void testFirebaseConnection() {
+        Log.d(TAG, "=== FIREBASE CONNECTION TEST STARTED ===");
+
+        // Test Database connection
+        testDatabaseConnection();
+
+        // Test Auth connection
+        testAuthConnection();
+
+        // Test ping đến emulator
+        testEmulatorPing();
+    }
+
+    /**
+     * Test kết nối Database
+     */
+    private void testDatabaseConnection() {
+        Log.d(TAG, "Testing Database connection...");
+
+        DatabaseReference testRef = Db.get().getReference("connection_test");
+        String testValue = "test_" + System.currentTimeMillis();
+
+        testRef.setValue(testValue)
+                .addOnSuccessListener(aVoid -> {
+                    Log.d(TAG, "✓ Database WRITE test: SUCCESS");
+                    Toast.makeText(MainActivity.this, "Database connected!", Toast.LENGTH_SHORT).show();
+
+                    // Test đọc dữ liệu vừa ghi
+                    testRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            String value = snapshot.getValue(String.class);
+                            if (testValue.equals(value)) {
+                                Log.d(TAG, "✓ Database READ test: SUCCESS");
+                            } else {
+                                Log.w(TAG, "⚠ Database READ test: DATA MISMATCH");
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                            Log.e(TAG, "✗ Database READ test: FAILED - " + error.getMessage());
+                        }
+                    });
+                })
+                .addOnFailureListener(e -> {
+                    Log.e(TAG, "✗ Database WRITE test: FAILED - " + e.getMessage());
+                    Toast.makeText(MainActivity.this,
+                            "Database connection failed: " + e.getMessage(),
+                            Toast.LENGTH_LONG).show();
+                });
+    }
+
+    /**
+     * Test kết nối Auth
+     */
+    private void testAuthConnection() {
+        Log.d(TAG, "Testing Auth connection...");
+
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+
+        if (auth.getCurrentUser() != null) {
+            Log.d(TAG, "✓ Auth connection: User is logged in - " +
+                    auth.getCurrentUser().getEmail() + " (" + auth.getCurrentUser().getUid() + ")");
+        } else {
+            Log.d(TAG, "ℹ Auth connection: No user logged in (this is normal for first run)");
+        }
+
+        // Test lấy current user token
+        if (auth.getCurrentUser() != null) {
+            auth.getCurrentUser().getIdToken(true)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Log.d(TAG, "✓ Auth token refresh: SUCCESS");
+                        } else {
+                            Log.e(TAG, "✗ Auth token refresh: FAILED - " +
+                                    task.getException().getMessage());
+                        }
+                    });
+        }
+    }
+
+    /**
+     * Test ping đến emulator
+     */
+    private void testEmulatorPing() {
+        Log.d(TAG, "Testing emulator ping...");
+
+        DatabaseReference pingRef = Db.get().getReference("_ping_from_app");
+        pingRef.setValue("hello_" + System.currentTimeMillis())
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Log.d(TAG, "✓ Emulator ping: SUCCESS");
+                    } else {
+                        Log.e(TAG, "✗ Emulator ping: FAILED - " +
+                                (task.getException() != null ?
+                                        task.getException().getMessage() : "Unknown error"));
+                    }
+                });
+    }
+
+    /**
+     * Test đếm số user trong database
+     */
+    private void testUserCount() {
+        Log.d(TAG, "Testing user count...");
+
+        DatabaseReference userRef = Db.get().getReference("user");
+        userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                long userCount = snapshot.getChildrenCount();
+                Log.d(TAG, "✓ User count test: " + userCount + " users found in database");
+
+                // Log chi tiết từng user
+                for (DataSnapshot userSnapshot : snapshot.getChildren()) {
+                    String userId = userSnapshot.getKey();
+                    String userName = userSnapshot.child("userName").getValue(String.class);
+                    String email = userSnapshot.child("mail").getValue(String.class);
+                    Log.d(TAG, "  - User: " + userName + " (" + email + ") ID: " + userId);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e(TAG, "✗ User count test: FAILED - " + error.getMessage());
+            }
+        });
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "MainActivity onStart");
+
+        // Test lại khi activity resume
+        testUserCount();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "MainActivity onResume");
+    }
+
 }
